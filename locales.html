@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas Perú - Locales</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/fabu-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fabu-navbar" data-bs-theme="light">
+            <div class="container">
+                <a class="navbar-brand fabu-brand" href="index.html">Hamburguesas <span class="fabu-brand-accent">Perú</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fabuNavbarMenu" aria-controls="fabuNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="fabuNavbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="menu.html#clasicas">Clásicas</a></li>
+                                <li><a class="dropdown-item" href="menu.html#especiales">Especiales</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="menu.html#combos">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="delivery.html">Delivery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visitanos.html">Visítanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar hamburguesa..." aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fabu-bloque-claro py-5">
+            <div class="container">
+                <p class="fabu-eyebrow text-center">Dónde encontrarnos</p>
+                <h1 class="fabu-titulo-seccion text-center mb-3">Nuestros locales y el equipo detrás 🍔</h1>
+                <p class="fabu-texto text-center mx-auto" style="max-width: 600px;">
+                    Tres sedes en Lima y un equipo comprometido con darte la mejor hamburguesa
+                    cada vez que pides.
+                </p>
+            </div>
+        </section>
+
+        <!-- Carousel de locales -->
+        <section class="fabu-seccion-promo">
+            <div class="container">
+                <div id="fabuCarouselLocales" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#fabuCarouselLocales" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#fabuCarouselLocales" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#fabuCarouselLocales" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/local-miraflores.png" class="d-block w-100 fabu-carousel-img" alt="Local Miraflores">
+                            <div class="carousel-caption fabu-carousel-caption">
+                                <h2>Miraflores</h2>
+                                <p>Nuestro local insignia, frente al malecón.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/local-sanborja.png" class="d-block w-100 fabu-carousel-img" alt="Local San Borja">
+                            <div class="carousel-caption fabu-carousel-caption">
+                                <h3>San Borja</h3>
+                                <p>Ideal para almorzar en familia.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/local-surco.png" class="d-block w-100 fabu-carousel-img" alt="Local Surco">
+                            <div class="carousel-caption fabu-carousel-caption">
+                                <h3>Surco</h3>
+                                <p>Nuestra sede más nueva, con delivery 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#fabuCarouselLocales" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#fabuCarouselLocales" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards de sedes -->
+        <section class="fabu-armado py-5">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">Elige tu sede más cercana 📍</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede">
+                            <div class="card-body">
+                                <h3 class="fabu-card-titulo h5">Miraflores</h3>
+                                <p class="fabu-sede-dato">📍 Av. Larco 345, Miraflores</p>
+                                <p class="fabu-sede-dato">🕐 12:00 PM - 11:00 PM</p>
+                                <button type="button" class="fabu-btn-secundario" data-bs-toggle="modal" data-bs-target="#fabuModalMiraflores">Ver detalles</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede">
+                            <div class="card-body">
+                                <h3 class="fabu-card-titulo h5">San Borja</h3>
+                                <p class="fabu-sede-dato">📍 Av. San Luis 1200, San Borja</p>
+                                <p class="fabu-sede-dato">🕐 12:00 PM - 10:30 PM</p>
+                                <button type="button" class="fabu-btn-secundario" data-bs-toggle="modal" data-bs-target="#fabuModalSanBorja">Ver detalles</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede">
+                            <div class="card-body">
+                                <h3 class="fabu-card-titulo h5">Surco</h3>
+                                <p class="fabu-sede-dato">📍 Av. Caminos del Inca 780, Surco</p>
+                                <p class="fabu-sede-dato">🕐 Abierto las 24 horas</p>
+                                <button type="button" class="fabu-btn-secundario" data-bs-toggle="modal" data-bs-target="#fabuModalSurco">Ver detalles</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historia -->
+        <section class="fabu-seccion-promo py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <p class="fabu-eyebrow">Nuestra historia</p>
+                        <h2 class="fabu-titulo-seccion">De un carrito a tres locales</h2>
+                        <p class="fabu-texto">
+                            Hamburguesas Perú nació en 2019 en un pequeño carrito en Miraflores.
+                            La idea era simple: carne de res peruana de calidad, pan suave y sin apuros.
+                        </p>
+                        <p class="fabu-texto">
+                            Hoy tenemos tres sedes y atendemos cientos de pedidos por semana.
+                            La receta no ha cambiado desde el primer día.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/promo-royal.jpg" class="img-fluid" style="border-radius: 16px;" alt="Historia Hamburguesas Perú">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipo -->
+        <section class="fabu-bloque-claro py-5">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">El equipo detrás 👨‍🍳</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede text-center">
+                            <div class="card-body py-4">
+                                <div class="fabu-icono">👨‍🍳</div>
+                                <h3 class="fabu-card-titulo h5">Carlos Quispe</h3>
+                                <p class="fabu-sede-dato">Chef principal y fundador</p>
+                                <p class="fabu-texto" style="font-size:0.9rem;">10 años perfeccionando la receta de la hamburguesa Simple.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede text-center">
+                            <div class="card-body py-4">
+                                <div class="fabu-icono">👩‍💼</div>
+                                <h3 class="fabu-card-titulo h5">Ana Flores</h3>
+                                <p class="fabu-sede-dato">Encargada de operaciones</p>
+                                <p class="fabu-texto" style="font-size:0.9rem;">Coordina los tres locales para que cada pedido salga perfecto.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede text-center">
+                            <div class="card-body py-4">
+                                <div class="fabu-icono">🛵</div>
+                                <h3 class="fabu-card-titulo h5">Equipo delivery</h3>
+                                <p class="fabu-sede-dato">8 repartidores activos</p>
+                                <p class="fabu-texto" style="font-size:0.9rem;">Cubren Miraflores, San Borja y Surco para que llegue caliente.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="fabu-frase">
+            <blockquote>
+                <p>"No es solo una hamburguesa, es el trabajo de toda nuestra gente."</p>
+                <cite>Carlos Quispe · Fundador</cite>
+            </blockquote>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fabu-footer">
+        <div class="fabu-footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-brand mb-2" style="font-size:1.3rem;">Hamburguesas <span class="fabu-brand-accent">Perú</span></p>
+                        <p style="color:#c8b49a; font-size:0.9rem; max-width:240px;">Carne de res peruana, pan suave y la receta de siempre. En cada sede te esperamos con la parrilla encendida.</p>
+                        <p class="fabu-footer-titulo-col mt-3">Aceptamos</p>
+                        <div class="d-flex flex-wrap gap-2 align-items-center mt-1">
+                            <img src="images/logo-visa.png" alt="Visa" class="fabu-pago-logo">
+                            <img src="images/logo-mastercard.png" alt="Mastercard" class="fabu-pago-logo">
+                            <img src="images/logo-yape.png" alt="Yape" class="fabu-pago-logo">
+                            <img src="images/logo-plin.png" alt="Plin" class="fabu-pago-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Páginas</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="menu.html">Menú</a></li>
+                            <li><a href="locales.html">Locales</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="delivery.html">Delivery</a></li>
+                            <li><a href="visitanos.html">Visítanos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Carta</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="menu.html#clasicas">Clásicas</a></li>
+                            <li><a href="menu.html#especiales">Especiales</a></li>
+                            <li><a href="menu.html#combos">Combos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Info</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="locales.html">Quiénes somos</a></li>
+                            <li><a href="delivery.html">Zonas de delivery</a></li>
+                            <li><a href="eventos.html">Próximos eventos</a></li>
+                            <li><a href="visitanos.html">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-footer-titulo-col">Síguenos</p>
+                        <div class="mb-3">
+                            <a href="#" class="fabu-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="fabu-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="fabu-social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                        <p class="fabu-footer-titulo-col mt-3">Atención al cliente</p>
+                        <p style="color:#c8b49a; font-size:0.88rem; margin:0;">📞 (01) 445-0001</p>
+                        <p style="color:#c8b49a; font-size:0.88rem;">✉️ hola@hamburguesasperu.pe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fabu-footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <span>© 2026 Hamburguesas Perú · Todos los derechos reservados</span>
+                <span>Hecho por Alexander · Proyecto académico final</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Miraflores -->
+    <div class="modal fade fabu-modal" id="fabuModalMiraflores" tabindex="-1" role="dialog" aria-labelledby="fabuModalMirafloresLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="fabuModalMirafloresLabel">Sede Miraflores</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Dirección:</strong> Av. Larco 345, Miraflores, Lima.</p>
+                    <p><strong>Horario:</strong> Lunes a domingo, 12:00 PM - 11:00 PM.</p>
+                    <p><strong>Servicios:</strong> Atención en salón, recojo en tienda y delivery.</p>
+                    <p>Nuestro local más antiguo, a dos cuadras del malecón. Terraza al aire libre y zona para grupos grandes.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="visitanos.html#fabuMapas" class="fabu-btn-principal">Ver ubicación exacta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- San Borja -->
+    <div class="modal fade fabu-modal" id="fabuModalSanBorja" tabindex="-1" role="dialog" aria-labelledby="fabuModalSanBorjaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="fabuModalSanBorjaLabel">Sede San Borja</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Dirección:</strong> Av. San Luis 1200, San Borja, Lima.</p>
+                    <p><strong>Horario:</strong> Lunes a domingo, 12:00 PM - 10:30 PM.</p>
+                    <p><strong>Servicios:</strong> Atención en salón, recojo en tienda y delivery.</p>
+                    <p>Espacio amplio para almuerzos familiares, con zona de juegos los fines de semana.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="visitanos.html#fabuMapas" class="fabu-btn-principal">Ver ubicación exacta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Surco -->
+    <div class="modal fade fabu-modal" id="fabuModalSurco" tabindex="-1" role="dialog" aria-labelledby="fabuModalSurcoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="fabuModalSurcoLabel">Sede Surco</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Dirección:</strong> Av. Caminos del Inca 780, Surco, Lima.</p>
+                    <p><strong>Horario:</strong> Abierto las 24 horas, todos los días.</p>
+                    <p><strong>Servicios:</strong> Delivery prioritario y pedidos para llevar.</p>
+                    <p>Nuestra sede más nueva, especializada en delivery rápido para toda la zona de Surco.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="visitanos.html#fabuMapas" class="fabu-btn-principal">Ver ubicación exacta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
