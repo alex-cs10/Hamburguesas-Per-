@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas Perú - Delivery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/fabu-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fabu-navbar" data-bs-theme="light">
+            <div class="container">
+                <a class="navbar-brand fabu-brand" href="index.html">Hamburguesas <span class="fabu-brand-accent">Perú</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fabuNavbarMenu" aria-controls="fabuNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="fabuNavbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menú
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="menu.html#clasicas">Clásicas</a></li>
+                                <li><a class="dropdown-item" href="menu.html#especiales">Especiales</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="menu.html#combos">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="delivery.html">Delivery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visitanos.html">Visítanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar hamburguesa..." aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Encabezado -->
+        <section class="fabu-bloque-claro py-5">
+            <div class="container">
+                <p class="fabu-eyebrow text-center">Pedidos a domicilio</p>
+                <h1 class="fabu-titulo-seccion text-center mb-3">Delivery 🛵</h1>
+                <p class="fabu-texto text-center mx-auto" style="max-width: 600px;">
+                    Hacemos llegar tu hamburguesa favorita directo a tu puerta,
+                    caliente y bien empacada. Revisa las zonas y haz tu pedido aquí.
+                </p>
+            </div>
+        </section>
+
+        <!-- Cómo funciona? -->
+        <section class="fabu-seccion-promo">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">¿Cómo funciona? 📋</h2>
+                <div class="row g-4 text-center">
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede h-100">
+                            <div class="card-body py-4">
+                                <div class="fabu-icono">1️⃣</div>
+                                <h3 class="fabu-card-titulo h5">Elige tu pedido</h3>
+                                <p class="fabu-texto">Revisa el menú, elige tu hamburguesa y combo favorito.</p>
+                                <a href="menu.html" class="fabu-btn-secundario">Ver el menú</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede h-100">
+                            <div class="card-body py-4">
+                                <div class="fabu-icono">2️⃣</div>
+                                <h3 class="fabu-card-titulo h5">Completa el formulario</h3>
+                                <p class="fabu-texto">Llena tus datos y dirección de entrega aquí abajo.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card fabu-card-sede h-100">
+                            <div class="card-body py-4">
+                                <div class="fabu-icono">3️⃣</div>
+                                <h3 class="fabu-card-titulo h5">Recibe tu pedido</h3>
+                                <p class="fabu-texto">Te confirmamos por WhatsApp y te enviamos el tiempo estimado.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabla de zonas y tarifas -->
+        <section class="fabu-armado py-5">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">Zonas y tarifas de envío 🗺️</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered fabu-tabla align-middle text-center">
+                        <thead>
+                            <tr>
+                                <th>Distrito</th>
+                                <th>Tiempo estimado</th>
+                                <th>Costo de envío</th>
+                                <th>Disponible desde</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Miraflores</strong></td>
+                                <td>15 - 25 min</td>
+                                <td class="text-success fw-bold">Gratis</td>
+                                <td>12:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>San Borja</strong></td>
+                                <td>20 - 30 min</td>
+                                <td class="text-success fw-bold">Gratis</td>
+                                <td>12:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Surco</strong></td>
+                                <td>20 - 35 min</td>
+                                <td class="text-success fw-bold">Gratis</td>
+                                <td>Todo el día</td>
+                            </tr>
+                            <tr>
+                                <td><strong>San Isidro</strong></td>
+                                <td>25 - 40 min</td>
+                                <td class="fabu-precio-tag">S/. 3.00</td>
+                                <td>12:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Barranco</strong></td>
+                                <td>25 - 40 min</td>
+                                <td class="fabu-precio-tag">S/. 3.00</td>
+                                <td>12:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Otros distritos</strong></td>
+                                <td>40 - 60 min</td>
+                                <td class="fabu-precio-tag">S/. 5.00</td>
+                                <td>12:00 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Métodos de pago -->
+        <section class="fabu-bloque-claro py-5">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">Métodos de pago 💳</h2>
+                <div class="row g-4 text-center justify-content-center">
+                    <div class="col-6 col-md-3">
+                        <div class="fabu-icono">💵</div>
+                        <h3 class="fabu-card-titulo h5">Efectivo</h3>
+                        <p class="fabu-texto" style="font-size: 0.9rem;">Pago exacto al recibir tu pedido.</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fabu-icono">💳</div>
+                        <h3 class="fabu-card-titulo h5">Tarjeta</h3>
+                        <p class="fabu-texto" style="font-size: 0.9rem;">Visa, Mastercard en la puerta de tu casa.</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fabu-icono">📱🟪</div>
+                        <h3 class="fabu-card-titulo h5">Yape</h3>
+                        <p class="fabu-texto" style="font-size: 0.9rem;">Transferencia rápida sin comisión.</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="fabu-icono">📲🔵</div>
+                        <h3 class="fabu-card-titulo h5">Plin</h3>
+                        <p class="fabu-texto" style="font-size: 0.9rem;">Pago instantáneo al confirmar el pedido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de pedido -->
+        <section class="fabu-seccion-form py-5">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">Haz tu pedido aquí 🍔</h2>
+                <form class="fabu-form mx-auto" style="max-width: 600px;" action="#" method="POST">
+
+                    <div class="mb-3">
+                        <label for="fabuNombrePedido" class="form-label">Nombre completo:</label>
+                        <input type="text" class="form-control" id="fabuNombrePedido" name="nombre" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fabuTelefonoPedido" class="form-label">Teléfono / WhatsApp:</label>
+                        <input type="tel" class="form-control" id="fabuTelefonoPedido" name="telefono" placeholder="999 999 999">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fabuDireccion" class="form-label">Dirección de entrega:</label>
+                        <input type="text" class="form-control" id="fabuDireccion" name="direccion" placeholder="Av. Ejemplo 123, Miraflores">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fabuProducto" class="form-label">¿Qué deseas pedir?</label>
+                        <select class="form-select" id="fabuProducto" name="producto">
+                            <option value="" selected>Selecciona una opción</option>
+                            <optgroup label="Hamburguesas">
+                                <option value="simple">Simple - S/. 8.50</option>
+                                <option value="queso">Con Queso - S/. 10.00</option>
+                                <option value="especial">Especial - S/. 12.50</option>
+                                <option value="royal">Royal - S/. 14.00</option>
+                            </optgroup>
+                            <optgroup label="Combos">
+                                <option value="combo-personal">Combo Personal - S/. 13.00</option>
+                                <option value="combo-duo">Combo Dúo - S/. 24.00</option>
+                                <option value="combo-familiar">Combo Familiar - S/. 45.00</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fabuPago" class="form-label">Método de pago:</label>
+                        <select class="form-select" id="fabuPago" name="pago">
+                            <option value="" selected>Selecciona un método</option>
+                            <option value="efectivo">Efectivo</option>
+                            <option value="tarjeta">Tarjeta</option>
+                            <option value="yape">Yape</option>
+                            <option value="plin">Plin</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fabuNotasPedido" class="form-label">Notas adicionales:</label>
+                        <textarea class="form-control" id="fabuNotasPedido" name="notas" rows="3" placeholder="Sin cebolla, sin picante, etc."></textarea>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="fabuTerminos" name="terminos">
+                        <label class="form-check-label" for="fabuTerminos">
+                            Acepto los términos de entrega y política de precios
+                        </label>
+                    </div>
+
+                    <button type="submit" class="fabu-btn-principal w-100">Confirmar pedido</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fabu-footer">
+        <div class="fabu-footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-brand mb-2" style="font-size:1.3rem;">Hamburguesas <span class="fabu-brand-accent">Perú</span></p>
+                        <p style="color:#c8b49a; font-size:0.9rem; max-width:240px;">Carne de res peruana, pan suave y la receta de siempre. En cada sede te esperamos con la parrilla encendida.</p>
+                        <p class="fabu-footer-titulo-col mt-3">Aceptamos</p>
+                        <div class="d-flex flex-wrap gap-2 align-items-center mt-1">
+                            <img src="images/logo-visa.png" alt="Visa" class="fabu-pago-logo">
+                            <img src="images/logo-mastercard.png" alt="Mastercard" class="fabu-pago-logo">
+                            <img src="images/logo-yape.png" alt="Yape" class="fabu-pago-logo">
+                            <img src="images/logo-plin.png" alt="Plin" class="fabu-pago-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Páginas</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="menu.html">Menú</a></li>
+                            <li><a href="locales.html">Locales</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="delivery.html">Delivery</a></li>
+                            <li><a href="visitanos.html">Visítanos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Carta</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="menu.html#clasicas">Clásicas</a></li>
+                            <li><a href="menu.html#especiales">Especiales</a></li>
+                            <li><a href="menu.html#combos">Combos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Info</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="locales.html">Quiénes somos</a></li>
+                            <li><a href="delivery.html">Zonas de delivery</a></li>
+                            <li><a href="eventos.html">Próximos eventos</a></li>
+                            <li><a href="visitanos.html">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-footer-titulo-col">Síguenos</p>
+                        <div class="mb-3">
+                            <a href="#" class="fabu-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="fabu-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="fabu-social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                        <p class="fabu-footer-titulo-col mt-3">Atención al cliente</p>
+                        <p style="color:#c8b49a; font-size:0.88rem; margin:0;">📞 (01) 445-0001</p>
+                        <p style="color:#c8b49a; font-size:0.88rem;">✉️ hola@hamburguesasperu.pe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fabu-footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <span>© 2026 Hamburguesas Perú · Todos los derechos reservados</span>
+                <span>Hecho por Alexander · Proyecto académico final</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
