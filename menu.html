@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas Perú - Menú</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/fabu-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fabu-navbar" data-bs-theme="light">
+            <div class="container">
+                <a class="navbar-brand fabu-brand" href="index.html">Hamburguesas <span class="fabu-brand-accent">Perú</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fabuNavbarMenu" aria-controls="fabuNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="fabuNavbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menú
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#clasicas">Clásicas</a></li>
+                                <li><a class="dropdown-item" href="#especiales">Especiales</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#combos">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="delivery.html">Delivery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visitanos.html">Visítanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar hamburguesa..." aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fabu-bloque-claro py-5">
+            <div class="container">
+                <p class="fabu-eyebrow text-center">Nuestra carta</p>
+                <h1 class="fabu-titulo-seccion text-center mb-3">El menú completo</h1>
+                <p class="fabu-texto text-center mx-auto" style="max-width: 600px;">
+                    Cuatro hamburguesas, hechas con la misma receta de siempre. Elige
+                    la que más se ajuste a tu hambre del día.
+                </p>
+            </div>
+        </section>
+
+        <!-- Clasicas -->
+        <section class="fabu-seccion-promo" id="clasicas">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion mb-4">Clásicas</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <article class="card fabu-card-promo">
+                            <img src="images/burger-simple.jpg" class="card-img-top" alt="Hamburguesa Simple">
+                            <div class="card-body">
+                                <h3 class="fabu-card-titulo h5">Simple</h3>
+                                <p class="card-text">Carne a la plancha, lechuga, tomate y cremas de la casa.</p>
+                                <p class="fabu-precio-tag">S/. 8.50</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="card fabu-card-promo">
+                            <img src="images/burger-queso.jpg" class="card-img-top" alt="Hamburguesa con Queso">
+                            <div class="card-body">
+                                <h3 class="fabu-card-titulo h5">Con Queso</h3>
+                                <p class="card-text">Carne, queso derretido, lechuga y tomate en pan brioche.</p>
+                                <p class="fabu-precio-tag">S/. 10.00</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especiales -->
+        <section class="fabu-seccion-promo" id="especiales">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion mb-4">Especiales</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <article class="card fabu-card-promo">
+                            <img src="images/burger-especial.jpg" class="card-img-top" alt="Hamburguesa Especial">
+                            <div class="card-body">
+                                <h3 class="fabu-card-titulo h5">Especial</h3>
+                                <p class="card-text">Carne, queso, huevo frito, vegetales y papitas crocantes.</p>
+                                <p class="fabu-precio-tag">S/. 12.50</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="card fabu-card-promo">
+                            <img src="images/burger-royal.jpg" class="card-img-top" alt="Hamburguesa Royal">
+                            <div class="card-body">
+                                <h3 class="fabu-card-titulo h5">Royal</h3>
+                                <p class="card-text">Carne, queso, huevo, tocino frito y vegetales. La completa.</p>
+                                <p class="fabu-precio-tag">S/. 14.00</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combos -->
+        <section class="fabu-bloque-claro py-5" id="combos">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">Combos disponibles</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered fabu-tabla align-middle text-center">
+                        <thead>
+                            <tr>
+                                <th>Combo</th>
+                                <th>Incluye</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Personal</strong></td>
+                                <td>1 Hamburguesa Simple + papas personales + gaseosa 500ml</td>
+                                <td class="fabu-precio-tag">S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dúo</strong></td>
+                                <td>2 Hamburguesas con Queso + papas grandes + 2 gaseosas personales</td>
+                                <td class="fabu-precio-tag">S/. 24.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Familiar</strong></td>
+                                <td>4 Hamburguesas Simples + 2 papas grandes + gaseosa 1.5L</td>
+                                <td class="fabu-precio-tag">S/. 45.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="fabu-seccion-promo py-5">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">Antes de pedir</h2>
+                <div class="accordion fabu-accordion mx-auto" id="fabuAccordionInfo" style="max-width: 700px;">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fabuColapso1">
+                                ¿Cuál es el horario de atención?
+                            </button>
+                        </h2>
+                        <div id="fabuColapso1" class="accordion-collapse collapse show" data-bs-parent="#fabuAccordionInfo">
+                            <div class="accordion-body">
+                                Atendemos todos los días, de lunes a domingo, desde las 12:00 PM
+                                hasta las 11:00 PM.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fabuColapso2">
+                                ¿Hacen delivery y tiene costo?
+                            </button>
+                        </h2>
+                        <div id="fabuColapso2" class="accordion-collapse collapse" data-bs-parent="#fabuAccordionInfo">
+                            <div class="accordion-body">
+                                El delivery es gratuito dentro de las avenidas principales de
+                                nuestro distrito. Para zonas más alejadas o distritos vecinos
+                                se aplica un recargo adicional de S/. 3.00.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fabuColapso3">
+                                ¿Qué métodos de pago aceptan?
+                            </button>
+                        </h2>
+                        <div id="fabuColapso3" class="accordion-collapse collapse" data-bs-parent="#fabuAccordionInfo">
+                            <div class="accordion-body">
+                                Puedes pagar en efectivo exacto al recibir tu pedido, con tarjeta,
+                                o mediante transferencia usando Yape o Plin.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fabuColapso4">
+                                ¿Cómo llega empacado mi pedido?
+                            </button>
+                        </h2>
+                        <div id="fabuColapso4" class="accordion-collapse collapse" data-bs-parent="#fabuAccordionInfo">
+                            <div class="accordion-body">
+                                Todos los pedidos se envían en cajas térmicas cerradas, para que
+                                lleguen calientes y en buen estado hasta tu puerta.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="fabu-frase">
+            <blockquote>
+                <p>"La mejor hamburguesa es la que llega tal cual la pediste."</p>
+                <cite>Equipo Hamburguesas Perú</cite>
+            </blockquote>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fabu-footer">
+        <div class="fabu-footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-brand mb-2" style="font-size:1.3rem;">Hamburguesas <span class="fabu-brand-accent">Perú</span></p>
+                        <p style="color:#c8b49a; font-size:0.9rem; max-width:240px;">Carne de res peruana, pan suave y la receta de siempre. En cada sede te esperamos con la parrilla encendida.</p>
+                        <p class="fabu-footer-titulo-col mt-3">Aceptamos</p>
+                         <div class="d-flex flex-wrap gap-2 align-items-center mt-1">
+                            <img src="images/logo-visa.png" alt="Visa" class="fabu-pago-logo">
+                            <img src="images/logo-mastercard.png" alt="Mastercard" class="fabu-pago-logo">
+                            <img src="images/logo-yape.png" alt="Yape" class="fabu-pago-logo">
+                            <img src="images/logo-plin.png" alt="Plin" class="fabu-pago-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Páginas</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="menu.html">Menú</a></li>
+                            <li><a href="locales.html">Locales</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="delivery.html">Delivery</a></li>
+                            <li><a href="visitanos.html">Visítanos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Carta</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="menu.html#clasicas">Clásicas</a></li>
+                            <li><a href="menu.html#especiales">Especiales</a></li>
+                            <li><a href="menu.html#combos">Combos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Info</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="locales.html">Quiénes somos</a></li>
+                            <li><a href="delivery.html">Zonas de delivery</a></li>
+                            <li><a href="eventos.html">Próximos eventos</a></li>
+                            <li><a href="visitanos.html">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-footer-titulo-col">Síguenos</p>
+                        <div class="mb-3">
+                            <a href="#" class="fabu-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="fabu-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="fabu-social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                        <p class="fabu-footer-titulo-col mt-3">Atención al cliente</p>
+                        <p style="color:#c8b49a; font-size:0.88rem; margin:0;">📞 (01) 445-0001</p>
+                        <p style="color:#c8b49a; font-size:0.88rem;">✉️ hola@hamburguesasperu.pe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fabu-footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <span>© 2026 Hamburguesas Perú · Todos los derechos reservados</span>
+                <span>Hecho por Alexander · Proyecto académico final</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
