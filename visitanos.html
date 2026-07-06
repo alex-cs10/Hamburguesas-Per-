@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas Perú - Visítanos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fabu-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fabu-navbar" data-bs-theme="light">
+            <div class="container">
+                <a class="navbar-brand fabu-brand" href="index.html">Hamburguesas <span class="fabu-brand-accent">Perú</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fabuNavbarMenu" aria-controls="fabuNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="fabuNavbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="menu.html#clasicas">Clásicas</a></li>
+                                <li><a class="dropdown-item" href="menu.html#especiales">Especiales</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="menu.html#combos">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="locales.html">Locales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="delivery.html">Delivery</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="visitanos.html">Visítanos</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar hamburguesa..." aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fabu-bloque-claro py-5">
+            <div class="container">
+                <p class="fabu-eyebrow text-center">Estamos en Lima</p>
+                <h1 class="fabu-titulo-seccion text-center mb-3">Visítanos 📍</h1>
+                <p class="fabu-texto text-center mx-auto" style="max-width: 580px;">
+                    Tres sedes en Lima esperándote. Encuentra la más cercana,
+                    únete al equipo o suscríbete para no perderte nada.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mapas de las sedes -->
+        <section class="fabu-seccion-promo py-5" id="fabuMapas">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-2">Nuestras sedes 🗺️</h2>
+                <p class="fabu-texto text-center mb-5">Búscanos en cualquiera de estas ubicaciones.</p>
+                <div class="row g-4">
+
+                    <!-- Miraflores -->
+                    <div class="col-md-4">
+                        <div class="h-100">
+                            <iframe class="fabu-mapa-sede"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6!2d-77.0282!3d-12.1191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8a458698989%3A0x6d30e87b38793da1!2sMiraflores%2C%20Lima!5e0!3m2!1ses!2spe!4v1700000001"
+                                allowfullscreen loading="lazy" title="Sede Miraflores">
+                            </iframe>
+                            <p class="fabu-sede-nombre">🍔 Sede Miraflores</p>
+                            <p class="fabu-sede-dato">📍 Av. Larco 345, Miraflores</p>
+                            <p class="fabu-sede-dato">🕐 Lun–Dom · 12:00 PM – 11:00 PM</p>
+                            <p class="fabu-sede-dato">📞 (01) 445-0001</p>
+                        </div>
+                    </div>
+
+                    <!-- San Borja -->
+                    <div class="col-md-4">
+                        <div class="h-100">
+                            <iframe class="fabu-mapa-sede"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2!2d-77.0007!3d-12.1058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c76ea9cf2de7%3A0x9c752c7e3c3b9ed5!2sSan%20Borja%2C%20Lima!5e0!3m2!1ses!2spe!4v1700000002"
+                                allowfullscreen loading="lazy" title="Sede San Borja">
+                            </iframe>
+                            <p class="fabu-sede-nombre">🍔 Sede San Borja</p>
+                            <p class="fabu-sede-dato">📍 Av. San Luis 1200, San Borja</p>
+                            <p class="fabu-sede-dato">🕐 Lun–Dom · 12:00 PM – 10:30 PM</p>
+                            <p class="fabu-sede-dato">📞 (01) 476-0002</p>
+                        </div>
+                    </div>
+
+                    <!-- Surco -->
+                    <div class="col-md-4">
+                        <div class="h-100">
+                            <iframe class="fabu-mapa-sede"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.1!2d-76.9972!3d-12.1498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7c8b4a2e9e7%3A0x12c3a7d8a73bce52!2sSantiago%20de%20Surco%2C%20Lima!5e0!3m2!1ses!2spe!4v1700000003"
+                                allowfullscreen loading="lazy" title="Sede Surco">
+                            </iframe>
+                            <p class="fabu-sede-nombre">🍔 Sede Surco</p>
+                            <p class="fabu-sede-dato">📍 Av. Caminos del Inca 780, Surco</p>
+                            <p class="fabu-sede-dato">🕐 Abierto las 24 horas</p>
+                            <p class="fabu-sede-dato">📞 (01) 372-0003</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="fabu-armado py-5">
+            <div class="container">
+                <div class="row g-5 align-items-start">
+
+                    <!-- Trabaja con nosotros -->
+                    <div class="col-lg-7">
+                        <p class="fabu-eyebrow">Únete al equipo</p>
+                        <h2 class="fabu-titulo-seccion mb-1">Trabaja con nosotros</h2>
+                        <p class="fabu-texto mb-4">¿Te apasiona la comida y el buen servicio? Déjanos tus datos y te contactamos cuando haya una oportunidad.</p>
+                        <form class="fabu-form" action="#" method="POST">
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="fabuNombreCV" class="form-label">Nombre completo:</label>
+                                    <input type="text" class="form-control" id="fabuNombreCV" name="nombre" placeholder="Tu nombre">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="fabuTelefonoCV" class="form-label">Teléfono:</label>
+                                    <input type="tel" class="form-control" id="fabuTelefonoCV" name="telefono" placeholder="999 999 999">
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="fabuPuesto" class="form-label">Puesto al que aplicas:</label>
+                                <select class="form-select" id="fabuPuesto" name="puesto">
+                                    <option value="" selected>Selecciona un puesto</option>
+                                    <option value="cocina">Cocinero / Ayudante de cocina</option>
+                                    <option value="caja">Cajero / Atención al cliente</option>
+                                    <option value="delivery">Repartidor delivery</option>
+                                    <option value="limpieza">Personal de limpieza</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Disponibilidad horaria:</label>
+                                <div class="d-flex gap-4 flex-wrap">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="fabuTurnoM" name="turno_manana">
+                                        <label class="form-check-label" for="fabuTurnoM">Mañana</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="fabuTurnoT" name="turno_tarde">
+                                        <label class="form-check-label" for="fabuTurnoT">Tarde</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="fabuTurnoN" name="turno_noche">
+                                        <label class="form-check-label" for="fabuTurnoN">Noche</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="fabuTurnoF" name="turno_fines">
+                                        <label class="form-check-label" for="fabuTurnoF">Fines de semana</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="fabuMensajeCV" class="form-label">Cuéntanos algo sobre ti:</label>
+                                <textarea class="form-control" id="fabuMensajeCV" name="mensaje" rows="3" placeholder="Experiencia previa, motivación, etc."></textarea>
+                            </div>
+
+                            <div class="mt-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="fabuAceptaCV">
+                                <label class="form-check-label" for="fabuAceptaCV">Acepto que mis datos sean usados para el proceso de selección</label>
+                            </div>
+
+                            <button type="submit" class="fabu-btn-principal mt-3">Enviar postulación</button>
+                        </form>
+                    </div>
+
+                    <!-- Suscríbete -->
+                    <div class="col-lg-5">
+                        <div class="fabu-subscribe-box">
+                            <h3>Suscríbete 🔔</h3>
+                            <p>Recibe en tu correo los próximos eventos, promociones exclusivas y novedades de Hamburguesas Perú antes que nadie.</p>
+                            <form action="#" method="POST">
+                                <div class="mb-3">
+                                    <label for="fabuEmailSub" class="form-label text-white">Tu correo electrónico:</label>
+                                    <input type="email" class="form-control" id="fabuEmailSub" name="email" placeholder="correo@ejemplo.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-white">¿Qué te interesa recibir?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="interes" id="fabuInteresPromo" value="promos" checked>
+                                        <label class="form-check-label text-white" for="fabuInteresPromo">Promociones y descuentos</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="interes" id="fabuInteresEventos" value="eventos">
+                                        <label class="form-check-label text-white" for="fabuInteresEventos">Eventos y fechas especiales</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="interes" id="fabuInteresTodo" value="todo">
+                                        <label class="form-check-label text-white" for="fabuInteresTodo">Todo lo anterior</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="fabu-btn-principal w-100">Suscribirme</button>
+                            </form>
+                            <p class="mt-3" style="font-size: 0.8rem; color: #9a8270;">Sin spam. Puedes darte de baja cuando quieras.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="fabu-frase">
+            <blockquote>
+                <p>"Te esperamos con la parrilla encendida."</p>
+                <cite>Equipo Hamburguesas Perú</cite>
+            </blockquote>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fabu-footer">
+        <div class="fabu-footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-brand mb-2" style="font-size:1.3rem;">Hamburguesas <span class="fabu-brand-accent">Perú</span></p>
+                        <p class="fabu-footer-marca" style="color:#c8b49a; font-size:0.9rem; max-width:240px;">
+                            Carne de res peruana, pan suave y la receta de siempre. En cada sede te esperamos con la parrilla encendida.
+                        </p>
+                        <!-- Métodos de pago -->
+                        <p class="fabu-footer-titulo-col mt-3">Aceptamos</p>
+                        <div class="d-flex flex-wrap gap-2 align-items-center mt-1">
+                            <img src="images/logo-visa.png" alt="Visa" class="fabu-pago-logo">
+                            <img src="images/logo-mastercard.png" alt="Mastercard" class="fabu-pago-logo">
+                            <img src="images/logo-yape.png" alt="Yape" class="fabu-pago-logo">
+                            <img src="images/logo-plin.png" alt="Plin" class="fabu-pago-logo">
+                        </div>
+                    </div>
+                    <!-- Navegación -->
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Páginas</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="menu.html">Menú</a></li>
+                            <li><a href="locales.html">Locales</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="delivery.html">Delivery</a></li>
+                            <li><a href="visitanos.html">Visítanos</a></li>
+                        </ul>
+                    </div>
+                    <!-- Carta -->
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Carta</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="menu.html#clasicas">Clásicas</a></li>
+                            <li><a href="menu.html#especiales">Especiales</a></li>
+                            <li><a href="menu.html#combos">Combos</a></li>
+                        </ul>
+                    </div>
+                    <!-- Info -->
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Info</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="locales.html">Quiénes somos</a></li>
+                            <li><a href="delivery.html">Zonas de delivery</a></li>
+                            <li><a href="eventos.html">Próximos eventos</a></li>
+                            <li><a href="visitanos.html">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <!-- Redes -->
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-footer-titulo-col">Síguenos</p>
+                        <div class="mb-3">
+                            <a href="#" class="fabu-social-btn" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="fabu-social-btn" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="fabu-social-btn" aria-label="TikTok">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </div>
+                        <p class="fabu-footer-titulo-col mt-3">Atención al cliente</p>
+                        <p style="color:#c8b49a; font-size:0.88rem; margin:0;">📞 (01) 445-0001</p>
+                        <p style="color:#c8b49a; font-size:0.88rem;">✉️ hola@hamburguesasperu.pe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fabu-footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <span>© 2026 Hamburguesas Perú · Todos los derechos reservados</span>
+                <span>Hecho por Alexander · Proyecto académico final</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
