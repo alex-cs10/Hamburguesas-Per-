@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas Perú - Eventos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/fabu-style.css">
+</head>
+<body>
+
+    <!-- Notificación (aparece al cargar) -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999;">
+        <div id="fabuToastBienvenida" class="toast align-items-center text-white fabu-toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    🍔 <strong>¡Nuevo evento!</strong> Hamburger Night este viernes. ¡Reserva tu lugar!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fabu-navbar" data-bs-theme="light">
+            <div class="container">
+                <a class="navbar-brand fabu-brand" href="index.html">Hamburguesas <span class="fabu-brand-accent">Perú</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fabuNavbarMenu" aria-controls="fabuNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="fabuNavbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="menu.html#clasicas">Clásicas</a></li>
+                                <li><a class="dropdown-item" href="menu.html#especiales">Especiales</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="menu.html#combos">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="delivery.html">Delivery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visitanos.html">Visítanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar hamburguesa..." aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fabu-bloque-claro py-5">
+            <div class="container">
+                <p class="fabu-eyebrow text-center">Fechas especiales</p>
+                <h1 class="fabu-titulo-seccion text-center mb-3">Eventos y Promociones 🎉</h1>
+                <p class="fabu-texto text-center mx-auto" style="max-width: 600px;">
+                    Cada semana hay algo nuevo en Hamburguesas Perú. Revisa las fechas,
+                    reserva tu lugar y no te pierdas ningún evento especial.
+                </p>
+            </div>
+        </section>
+
+        <!-- Alerta de evento próximo -->
+        <div class="container pt-4">
+            <div class="alert alert-warning d-flex align-items-center gap-2" role="alert">
+                <span style="font-size: 1.3rem;">⚠️</span>
+                <div>
+                    <strong>¡Quedan pocos lugares!</strong> El Hamburger Night del viernes 11 de julio está casi lleno. Reserva antes de que se agote.
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards de eventos -->
+        <section class="fabu-seccion-promo">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion mb-4">Próximos eventos</h2>
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <article class="card fabu-card-promo h-100">
+                            <img src="images/promo-especial.jpg" class="card-img-top" alt="Hamburger Night">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="fabu-card-titulo h5 mb-0">Hamburger Night</h3>
+                                    <span class="badge bg-success">Disponible</span>
+                                </div>
+                                <p class="card-text">Viernes 11 de julio — Local Miraflores</p>
+                                <p class="card-text">Noche especial con la Royal a precio de lanzamiento y música en vivo en la terraza.</p>
+                                <p class="fabu-precio-tag">Entrada libre</p>
+                                <a href="contacto.html" class="fabu-btn-principal">Reservar lugar</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="card fabu-card-promo h-100">
+                            <img src="images/promo-combo-duo.jpg" class="card-img-top" alt="Domingo Familiar">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="fabu-card-titulo h5 mb-0">Domingo Familiar</h3>
+                                    <span class="badge bg-success">Disponible</span>
+                                </div>
+                                <p class="card-text">Domingo 13 de julio — Todos los locales</p>
+                                <p class="card-text">Combo Familiar a precio especial solo los domingos. Cuatro hamburguesas, papas y gaseosa familiar.</p>
+                                <p class="fabu-precio-tag">S/. 38.00</p>
+                                <a href="delivery.html" class="fabu-btn-principal">Pedir ahora</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="card fabu-card-promo h-100">
+                            <img src="images/burger-royal.jpg" class="card-img-top" alt="Taller Burger">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="fabu-card-titulo h5 mb-0">Taller Burger</h3>
+                                    <span class="badge bg-danger">Agotado</span>
+                                </div>
+                                <p class="card-text">Sábado 5 de julio — Local San Borja</p>
+                                <p class="card-text">Aprende a armar tu propia hamburguesa con nuestro chef Carlos. Cupos para 20 personas.</p>
+                                <p class="fabu-precio-tag">S/. 25.00</p>
+                                <button class="fabu-btn-secundario" disabled style="opacity:0.6; cursor:not-allowed;">Sin cupos</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="card fabu-card-promo h-100">
+                            <img src="images/promo-royal.jpg" class="card-img-top" alt="Aniversario">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="fabu-card-titulo h5 mb-0">Aniversario HP</h3>
+                                    <span class="badge bg-warning text-dark">Próximamente</span>
+                                </div>
+                                <p class="card-text">Julio 2026 — Todos los locales</p>
+                                <p class="card-text">Celebramos 7 años con descuentos en toda la carta y sorpresas para los primeros en llegar.</p>
+                                <p class="fabu-precio-tag">Próximo anuncio</p>
+                                <a href="contacto.html" class="fabu-btn-secundario">Avísame</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="card fabu-card-promo h-100">
+                            <img src="images/burger-especial.jpg" class="card-img-top" alt="2x1 Miércoles">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="fabu-card-titulo h5 mb-0">2×1 Miércoles</h3>
+                                    <span class="badge bg-success">Disponible</span>
+                                </div>
+                                <p class="card-text">Todos los miércoles — Local Surco</p>
+                                <p class="card-text">Pide una Simple o Con Queso y la segunda sale gratis. Solo en el local de Surco.</p>
+                                <p class="fabu-precio-tag">Desde S/. 8.50</p>
+                                <a href="delivery.html" class="fabu-btn-principal">Pedir ahora</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="card fabu-card-promo h-100">
+                            <img src="images/burger-queso.jpg" class="card-img-top" alt="Burger del Mes">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h3 class="fabu-card-titulo h5 mb-0">Burger del Mes</h3>
+                                    <span class="badge bg-warning text-dark">Próximamente</span>
+                                </div>
+                                <p class="card-text">Agosto 2026 — Todos los locales</p>
+                                <p class="card-text">Cada mes una hamburguesa edición limitada. La de agosto trae salsa especial de la casa.</p>
+                                <p class="fabu-precio-tag">Precio por confirmar</p>
+                                <a href="contacto.html" class="fabu-btn-secundario">Avísame</a>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="fabu-armado py-5">
+            <div class="container">
+                <h2 class="fabu-titulo-seccion text-center mb-4">Eventos anteriores</h2>
+                <ul class="list-group mx-auto" style="max-width: 650px;">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Hamburger Night — Junio 2026
+                        <span class="badge fabu-badge-pasado rounded-pill">Finalizado</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Taller Burger para niños — Mayo 2026
+                        <span class="badge fabu-badge-pasado rounded-pill">Finalizado</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Domingo Familiar — Día de la Madre, Mayo 2026
+                        <span class="badge fabu-badge-pasado rounded-pill">Finalizado</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        2x1 Semana Santa — Abril 2026
+                        <span class="badge fabu-badge-pasado rounded-pill">Finalizado</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Lanzamiento sede Surco — Marzo 2026
+                        <span class="badge fabu-badge-pasado rounded-pill">Finalizado</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="fabu-frase">
+            <blockquote>
+                <p>"Siempre hay un motivo para comer una buena hamburguesa."</p>
+                <cite>Equipo Hamburguesas Perú</cite>
+            </blockquote>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fabu-footer">
+        <div class="fabu-footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-brand mb-2" style="font-size:1.3rem;">Hamburguesas <span class="fabu-brand-accent">Perú</span></p>
+                        <p style="color:#c8b49a; font-size:0.9rem; max-width:240px;">Carne de res peruana, pan suave y la receta de siempre. En cada sede te esperamos con la parrilla encendida.</p>
+                        <p class="fabu-footer-titulo-col mt-3">Aceptamos</p>
+                         <div class="d-flex flex-wrap gap-2 align-items-center mt-1">
+                            <img src="images/logo-visa.png" alt="Visa" class="fabu-pago-logo">
+                            <img src="images/logo-mastercard.png" alt="Mastercard" class="fabu-pago-logo">
+                            <img src="images/logo-yape.png" alt="Yape" class="fabu-pago-logo">
+                            <img src="images/logo-plin.png" alt="Plin" class="fabu-pago-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Páginas</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="menu.html">Menú</a></li>
+                            <li><a href="locales.html">Locales</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="delivery.html">Delivery</a></li>
+                            <li><a href="visitanos.html">Visítanos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Carta</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="menu.html#clasicas">Clásicas</a></li>
+                            <li><a href="menu.html#especiales">Especiales</a></li>
+                            <li><a href="menu.html#combos">Combos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <p class="fabu-footer-titulo-col">Info</p>
+                        <ul class="fabu-footer-links">
+                            <li><a href="locales.html">Quiénes somos</a></li>
+                            <li><a href="delivery.html">Zonas de delivery</a></li>
+                            <li><a href="eventos.html">Próximos eventos</a></li>
+                            <li><a href="visitanos.html">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="fabu-footer-titulo-col">Síguenos</p>
+                        <div class="mb-3">
+                            <a href="#" class="fabu-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="fabu-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="fabu-social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                        <p class="fabu-footer-titulo-col mt-3">Atención al cliente</p>
+                        <p style="color:#c8b49a; font-size:0.88rem; margin:0;">📞 (01) 445-0001</p>
+                        <p style="color:#c8b49a; font-size:0.88rem;">✉️ hola@hamburguesasperu.pe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fabu-footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <span>© 2026 Hamburguesas Perú · Todos los derechos reservados</span>
+                <span>Hecho por Alexander · Proyecto académico final</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        const toastEl = document.getElementById('fabuToastBienvenida');
+        const toast = new bootstrap.Toast(toastEl, { delay: 5000 });
+        toast.show();
+    </script>
+</body>
+</html>
